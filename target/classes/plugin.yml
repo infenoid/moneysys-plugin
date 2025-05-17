@@ -1,0 +1,15 @@
+name: Money
+version: '1.0'
+main: org.example.test.Money
+api-version: '1.21'
+owner: xeeClown
+commands:
+  bank:
+    description: Bank system for transactions
+    usage: /bank <subcommand>
+    permission: money.use
+    aliases: [money, wallet]
+permissions:
+  money.use:
+    description: Access to bank commands
+    default: true
